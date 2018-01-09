@@ -7,10 +7,12 @@ face_generation/data/
 
 .ipynb_checkpoints/
 
-
 *.pyc
 *.p
-*.pkl 
+*.pkl
+*.pickle
+*.zip
 
 */.floyd*
 
+__pycache__
