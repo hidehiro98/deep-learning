@@ -4,6 +4,7 @@
 embeddings/data/
 embeddings/text8.zip
 face_generation/data/
+data
 
 .ipynb_checkpoints/
 
