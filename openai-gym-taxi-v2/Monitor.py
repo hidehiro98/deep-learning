@@ -5,7 +5,7 @@ import numpy as np
 
 def interact(env, agent, num_episodes=20000, window=100):
 	""" Monitor agent's performance.
-	
+
 	Params
 	======
 	- env: instance of OpenAI Gym's Taxi-v1 environment
@@ -32,11 +32,11 @@ def interact(env, agent, num_episodes=20000, window=100):
 		samp_reward = 0
 		while True:
 			# agent selects an action
-			action = agent.select_action(state)
+			action = agent.select_action(state, i_episode)
 			# agent performs the selected action
 			next_state, reward, done, _ = env.step(action)
 			# agent performs internal updates based on sampled experience
-			agent.step(state, action, reward, next_state, done)
+			agent.step(state, action, reward, next_state, done, i_episode)
 			# update the sampled reward
 			samp_reward += reward
 			# update the state (s <- s') to next time step

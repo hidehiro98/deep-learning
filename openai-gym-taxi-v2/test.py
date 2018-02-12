@@ -10,3 +10,4 @@ for _ in range(3):
 	print('----------------')
 
 # action: 0 -> down, 1 -> up, 2 -> right, 3 -> left, 4 -> pickup, 5 -> dropoff
+# (379, -1, False, {'prob': 1.0}), (observation, reward, done, )
