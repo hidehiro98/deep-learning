@@ -3,7 +3,7 @@ from collections import defaultdict
 
 class Agent:
 
-    def __init__(self, nA=6, epsilon=0.005, alpha=0.3, gamma=1.0):
+    def __init__(self, nA=6, epsilon=0.004, alpha=0.2, gamma=1.0):
         """ Initialize agent.
 
         Params
